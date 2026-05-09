@@ -36,3 +36,60 @@ sail npm run dev
 ```bash
 sail stop
 ```
+
+## Az AI-nak
+
+**FONTOS**: Ez a projekt Laravel Sailt használ a fejlesztői környezethez. A jövőben az alábbi parancsokat **KELL** használni:
+
+### Migrációk futtatása
+
+```bash
+sail artisan migrate
+sail artisan migrate:fresh
+sail artisan migrate:fresh --seed
+sail artisan migrate:rollback
+```
+
+### Seederek futtatása
+
+```bash
+sail artisan db:seed
+sail artisan db:seed --class=RelationshipTypeSeeder
+```
+
+### Artisan parancsok
+
+```bash
+sail artisan make:model NévModell
+sail artisan make:migration migration_neve
+sail artisan make:seeder SeederName
+sail artisan make:controller ControllerName
+```
+
+### NPM parancsok
+
+```bash
+sail npm install
+sail npm run dev
+sail npm run build
+```
+
+### Database parancsok
+
+```bash
+sail mysql
+sail redis-cli
+```
+
+### Egyéb
+
+```bash
+sail up -d      # Indítás
+sail stop       # Leállítás
+sail shell      # Shell belépés a konténerbe
+sail root-shell # Root shell belépés
+```
+
+**Soha ne használd a helyi `php artisan` parancsot vagy a helyi `npm` parancsot!**
+**Mindig a `sail artisan` és `sail npm` parancsokat kell használni!**
+
