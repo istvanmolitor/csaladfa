@@ -3,6 +3,7 @@ cd packages
 git clone git@github.com:istvanmolitor/admin.git
 git clone git@github.com:istvanmolitor/media.git
 git clone git@github.com:istvanmolitor/menu.git
+git clone git@github.com:istvanmolitor/theme.git
 git clone git@github.com:istvanmolitor/user.git
 
 cd ../resources/js
@@ -12,6 +13,7 @@ cd packages
 git clone git@github.com:istvanmolitor/vue-admin.git
 git clone git@github.com:istvanmolitor/vue-media.git
 git clone git@github.com:istvanmolitor/ts-menu.git
+git clone git@github.com:istvanmolitor/vue-theme.git
 git clone git@github.com:istvanmolitor/vue-user.git
 
 cd ../../../

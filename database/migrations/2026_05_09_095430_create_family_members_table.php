@@ -13,6 +13,29 @@ return new class extends Migration
     {
         Schema::create('family_members', function (Blueprint $table) {
             $table->id();
+
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+
+            // Alapadatok
+            $table->string('first_name');
+            $table->string('last_name');
+            $table->string('maiden_name')->nullable();       // leánykori név
+            $table->enum('gender', ['male', 'female', 'other'])->nullable();
+
+            // Születés
+            $table->date('birth_date')->nullable();
+            $table->string('birth_place')->nullable();
+
+            // Halál
+            $table->date('death_date')->nullable();
+            $table->string('death_place')->nullable();
+
+            // Egyéb
+            $table->string('nationality')->nullable();
+            $table->string('occupation')->nullable();        // foglalkozás
+            $table->text('bio')->nullable();                 // életrajz / leírás
+            $table->string('profile_photo_path')->nullable();
+
             $table->timestamps();
         });
     }

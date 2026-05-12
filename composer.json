@@ -20,6 +20,8 @@
         "istvanmolitor/media": "@dev",
         "istvanmolitor/menu": "@dev",
         "istvanmolitor/user": "@dev",
+        "istvanmolitor/setting": "@dev",
+        "istvanmolitor/theme": "@dev",
         "laravel/framework": "^13.7",
         "laravel/tinker": "^3.0"
     },
